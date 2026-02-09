@@ -1,0 +1,16 @@
+<h2>Transaction History</h2>
+
+<table border="1">
+  <tr>
+    <th>From</th>
+    <th>To</th>
+    <th>Amount</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let tx of transactions">
+    <td>{{ tx.fromAccount }}</td>
+    <td>{{ tx.toAccount }}</td>
+    <td>{{ tx.amount }}</td>
+    <td>{{ tx.status }}</td>
+  </tr>
+</table>

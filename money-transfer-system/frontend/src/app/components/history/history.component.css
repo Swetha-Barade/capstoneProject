@@ -1,0 +1,89 @@
+/* history.component.css */
+
+/* Overall container */
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Heading style */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #1a73e8; /* Blue accent */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table headers */
+th {
+  background-color: #1a73e8;
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Table rows */
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+}
+
+/* Alternate row colors for readability */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect for rows */
+tr:hover {
+  background-color: #e8f0fe;
+  transition: background-color 0.3s ease;
+}
+
+/* Status styling */
+td:last-child {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* Example: color coding status */
+td:last-child.pending {
+  color: #ff9800; /* Orange for pending */
+}
+
+td:last-child.completed {
+  color: #4caf50; /* Green for completed */
+}
+
+td:last-child.failed {
+  color: #f44336; /* Red for failed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  table, th, td {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 10px 8px;
+  }
+}
